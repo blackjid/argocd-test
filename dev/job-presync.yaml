@@ -19,3 +19,4 @@ spec:
         command:
         - sleep
         - "10"
+      restartPolicy: Never
