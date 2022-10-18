@@ -11,6 +11,21 @@ spec:
       - name: myapp
         image: alpine
         command:
+        - /bin/sh
+        args:
+        - -c
+        - sleep 5; pkill sleep
+      - name: sidecar
+        image: alpine
+        command:
         - sleep
-        - "10"
+        - "30"
       restartPolicy: Never
+
+      securityContext:
+        runAsNonRoot: true
+        allowPrivilegeEscalation: false
+        readOnlyRootFilesystem: true
+        capabilities:
+          drop:
+            - ALL
