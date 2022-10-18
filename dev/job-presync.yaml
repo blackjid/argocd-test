@@ -16,8 +16,7 @@ spec:
         command:
         - /bin/sh
         args:
-        - -c
-        - sleep 5; pkill sleep
+        - "-c sleep 5; pkill sleep"
       - name: sidecar
         image: alpine
         command:
