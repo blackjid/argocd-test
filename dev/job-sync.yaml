@@ -4,6 +4,7 @@ metadata:
   name: myjob-sync
   annotations:
     argocd.argoproj.io/hook: Sync
+    argocd.argoproj.io/sync-wave: "-2"
 spec:
   template:
     spec:
