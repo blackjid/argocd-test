@@ -18,4 +18,4 @@ spec:
         image: alpine
         command:
         - sleep
-        - 10
+        - "10"
