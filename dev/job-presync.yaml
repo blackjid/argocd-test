@@ -1,7 +1,7 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: batch/v1
+kind: Job
 metadata:
-  name: myapp-presync
+  name: myjob-presync
   annotations:
     argocd.argoproj.io/hook: PreSync
 spec:
