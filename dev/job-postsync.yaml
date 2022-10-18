@@ -5,13 +5,7 @@ metadata:
   annotations:
     argocd.argoproj.io/hook: PostSync
 spec:
-  selector:
-    matchLabels:
-      app: myapp
   template:
-    metadata:
-      labels:
-        app: myapp
     spec:
       containers:
       - name: myapp
