@@ -17,4 +17,5 @@ spec:
       - name: myapp
         image: alpine
         command:
-        - sleep 10
+        - sleep
+        - 10
